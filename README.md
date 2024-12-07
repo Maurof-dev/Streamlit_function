@@ -1,7 +1,7 @@
-# Streamlit_function
+# Streamlit_function app
 
 
-# A streamlit app that can be used to interpolate a 1D analytical function in a selected interval with a neural network (NN).
+# Use it to interpolate a 1D analytical function with a neural network (NN).
 
 
 # The function can be given as a symbolic expression.
