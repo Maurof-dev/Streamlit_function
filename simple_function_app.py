@@ -90,11 +90,11 @@ if stop:
 count = 1
 file_model = st.file_uploader(label='Upload an existing NN model and (re)plot',key=count)
 if file_model:
-    model = torch.load(file_model)
+    model = torch.load(file_model,weights_only=True)
     xlist = np.linspace(xmin,xmax,Npoints)
     x = symbols('x')
     function = sympify(function)
-    ylist = np.array([function.subs(x,xi) for xi in xlist])#noise not included!
+    ylist = np.array([function.subs(x,xi) for xi in xlist]) + np.random.normal(0,0.05,Npoints) 
     #if st.button('replot'):
     mod.tester(model,Npoints,xlist,ylist)
     
