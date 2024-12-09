@@ -1,9 +1,9 @@
-streamlit==1.23.1
-numpy==1.21.6
-matplotlib==3.5.3
-torch==1.13.1
-scikit-learn==1.0.2
-sympy==1.6.2
+streamlit
+numpy
+matplotlib
+torch
+scikit-learn
+sympy
 
 
 
