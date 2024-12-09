@@ -1,6 +1,7 @@
 streamlit
 numpy
 matplotlib
+seaborn
 torch
 scikit-learn
 sympy
