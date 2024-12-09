@@ -80,7 +80,7 @@ if stop:
     Xl = st.session_state.result[1]
     Yl = st.session_state.result[2]
     torch.save(something,f'{namefile}')
-    saver = torch.load('trained_NN_model')
+    saver = torch.load('trained_NN_model',weights_only=True)
     mod.tester(saver,Npoints,Xl,Yl)
 
 
