@@ -65,7 +65,7 @@ if start:
         model = mod.NeuralNetwork(nlayers,nneurons)
         function = sympify(function) #convert str into function
         update = mod.trainer(model,function,Npoints,T,size,xmin,xmax,wnoise) # return model, xlist, ylist <- function
-        #mod.tester(update[0],Npoints,update[1],update[2])
+        mod.tester(update[0],Npoints,update[1],update[2])
         x = 0.1
         y = x + 3 # final_res generated
     finally:
