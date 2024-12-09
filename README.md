@@ -8,3 +8,16 @@
 
 
 # The NN training parameters can be tuned and the model saved for future use.
+
+
+#############
+
+Workflow:
+
+pip install pipenv
+
+pipenv shell
+
+pip install requirements.txt
+
+streamlit run simple_function_app.py
