@@ -17,7 +17,7 @@
 
 Workflow:
 
-pip install pipenv
+pip install pipenv==2023.10.3
 
 pipenv shell
 
