@@ -82,18 +82,18 @@ if start:
 #    #saver = torch.load('trained_NN_model',weights_only=True)
 #    mod.tester(something,Npoints,Xl,Yl)
 
-#import io
+    import io
 
-#buffer = io.BytesIO()
-#torch.save(model.state_dict(), buffer)
-#buffer.seek(0)
+    buffer = io.BytesIO()
+    torch.save(model.state_dict(), buffer)
+    buffer.seek(0)
 
-#st.download_button(
-#    label="Download trained model",
-#    data=buffer,
-#    file_name=f"{namefile}.pt",
-#    mime="application/octet-stream",
-#)
+    st.download_button(
+        label="Download trained model",
+        data=buffer,
+        file_name=f"{namefile}.pt",
+        mime="application/octet-stream",
+    )
 
 
 
