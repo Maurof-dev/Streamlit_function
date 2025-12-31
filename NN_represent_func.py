@@ -1,6 +1,5 @@
 import sys
 import numpy as np
-from sklearn.model_selection import train_test_split
 from math import sqrt
 
 import torch
