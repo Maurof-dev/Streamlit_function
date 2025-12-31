@@ -1,19 +1,14 @@
 import sys
 import numpy as np
 from math import sqrt
-
+from sklearn.model_selection import train_test_split
 import torch
 from torch import nn
 import torch.optim as optim
-
-
 from sympy import symbols, sympify
-
-
 import matplotlib
 import matplotlib.pyplot as plt
 import seaborn as sns
-
 import streamlit as st
 
 
